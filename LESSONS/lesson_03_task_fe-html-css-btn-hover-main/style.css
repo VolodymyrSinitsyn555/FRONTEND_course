@@ -1,0 +1,18 @@
+.button {
+  padding: 20px 20px;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  font: 1em sans-serif;
+  border-radius: 8px;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.green {
+  background-color: #778d45;
+}
+
+.light-green {
+  background-color: #aec09a;
+}
