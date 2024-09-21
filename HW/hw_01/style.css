@@ -1,0 +1,41 @@
+* {
+  font-family: Geneva, Tahoma, sans-serif;
+}
+
+.h1-text {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(94, 5, 5);
+}
+
+.h2-text {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+  color: #275000;
+  font-style: italic;
+}
+
+.img-photo {
+  width: 250px;
+}
+
+.ul-text {
+  font-style: italic;
+  color: rgb(11, 23, 136);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.site-txt {
+  font-family: fantasy;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 30px;
+  color: #5e0000;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
