@@ -16,3 +16,7 @@
 .light-green {
   background-color: #aec09a;
 }
+
+.button:hover{
+  color: #000000;
+}
