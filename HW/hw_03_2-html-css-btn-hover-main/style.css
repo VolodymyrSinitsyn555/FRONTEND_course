@@ -1,22 +1,32 @@
+*{
+  /* box-sizing: border-box; */
+}
+
 .button {
-  padding: 20px 20px;
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  height: 50px;
+  color: #ffffff;
+  /* display: inline-block; */
+  /* text-align: center; */
   border: none;
   font: 1em sans-serif;
-  border-radius: 8px;
-  color: #ffffff;
-  margin: 10px;
 }
 
 .green {
   background-color: #778d45;
+  cursor: pointer;
 }
 
 .light-green {
+  /* height: 200px; */
   background-color: #aec09a;
 }
 
 .button:hover{
   color: #000000;
+  cursor: pointer;
 }
