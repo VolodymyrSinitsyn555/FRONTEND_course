@@ -49,3 +49,10 @@ input{
   min-width: 230px;
   height: 18px;
 }
+
+input:focus{
+  outline-style: solid;
+  outline-color: rgb(228, 228, 228);
+  outline-width: 2px;
+}
+
