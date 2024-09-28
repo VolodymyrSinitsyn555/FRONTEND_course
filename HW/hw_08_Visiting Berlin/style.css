@@ -225,7 +225,7 @@ main {
   background-color: #ff9494;
 }
 
-/* --------------------------------container-footer ---------------------------------- */
+/* ---------------------------container-footer ----------------------------- */
 
 .container-footer {
   width: 100%;
@@ -246,30 +246,35 @@ main {
 }
 
 .red-narrow-box {
-  display: grid;
-  place-content: center;
-  margin-left: 6px;
+display: flex;
+justify-content: center;
+align-items: center;
+  margin-left: 5px;
   width: 24px;
   height: 24px;
   background-color: #e40422;
 }
 
-.nav-contauner-footer {
-  margin: 20px 0;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.red-narrow-box i{
+  margin-left: 3px;
 }
 
-.nav-contauner-footer div {
+.nav-container-footer {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.nav-container-footer div {
   margin-left: 20px;
 }
 
 .move {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
-.nav-contauner-footer h3 {
+.nav-container-footer h3 {
   margin: 15px;
   margin-bottom: 20px;
   font-size: 17px;
@@ -277,13 +282,13 @@ main {
   line-height: 23px;
 }
 
-.nav-contauner-footer li {
+.nav-container-footer li {
   margin: 15px;
   line-height: 18px;
   cursor: pointer;
 }
 
-.nav-contauner-footer li:hover {
+.nav-container-footer li:hover {
   text-decoration: underline;
 }
 
@@ -311,7 +316,7 @@ footer {
   margin: 20px 0;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .nav-footer div {
@@ -345,7 +350,14 @@ footer {
 
 .end-text{
   margin-top: 35px;
-  margin-left: 35px;
+  margin-left: 55px;
   margin-bottom: 80px;
   color: #ffffff;
+}
+
+.nav-footer div:nth-child(1){
+  margin-left: 40px;
+}
+.nav-footer div:nth-child(5){
+  margin-left: 50px;
 }
