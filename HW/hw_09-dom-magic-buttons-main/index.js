@@ -17,11 +17,11 @@
 let btn = document.getElementById("magic-btn")
 let clonedBtn = btn.cloneNode(true);
 clonedBtn.className = "magic-btn-2"
+clonedBtn.style.color = 'wight'
+clonedBtn.style.backgroundColor = '#a78b71'
+clonedBtn.innerText = 'Я изменю тебя'
 
 btn.addEventListener('click', () => {
-  clonedBtn.style.color = 'wight'
-  clonedBtn.style.backgroundColor = '#a78b71'
-  clonedBtn.innerText = 'Я изменя тебя'
   document.body.append(clonedBtn)}
 )
 
