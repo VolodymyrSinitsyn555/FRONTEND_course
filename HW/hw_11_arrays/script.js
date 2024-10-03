@@ -11,6 +11,7 @@ nameAgeList.push(`${names[1]} ${ages[1]} год`);
 nameAgeList.push(`${names[2]} ${ages[2]} лет`);
 nameAgeList.push(`${names[3]} ${ages[3]} года`);
 
+
 console.log(nameAgeList);
 
 // V-2

@@ -1,31 +1,71 @@
-* {
-  font-family: "Trebuchet MS", sans-serif;
+body {
+   background-image: url(./img/paulina-milde-jachowska-m6OzmW0GrPk-unsplash.jpg);
+background-size: cover;
+}
 
+.jumping-letters {
+   display: flex;
+   justify-content: center;
+   align-items: end;
+   width: 1200px;
+   height: 70px;
+   margin-bottom: 70px;
+   padding-bottom: 7px;
+   font-family: 'Rubik Mono One', monospace;
+   font-size: 30px;
+   color: #ffffff;
+   -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+}
+
+.jumping-letters span {
+  white-space: pre;
+   letter-spacing: 10px;
+   animation: wave 1.6s infinite calc(.1s * var(--i));
+}
+
+@keyframes wave{
+  0%, 40%, 100%{
+transform: translateY(0);
+  }
+  20%{
+     transform: translateY(10px);
+  }
+}
+
+th {
+   color: #bbbbbb;
+   font-family: 'Rubik Mono One', monospace;
+   font-size: 13px;
+   letter-spacing: 4px;
+   padding-bottom: 10px;
 }
 
 h1 {
-  background-color: #caecf5;
-  width: 80%;
+   background-color: #ffffff;
+   width: 80%;
 }
 
 table {
-  border-collapse: collapse;
+   border-collapse: collapse;
+   font-family: "Rubik Scribble", system-ui;
+   font-weight: 700
 }
 
 tr {
-  border-bottom: 1px solid rgb(138, 138, 138);
+   border-bottom: 1px solid rgb(61, 61, 61);
 }
 
 tr td {
-  padding: 2px 20px;
-  height: 20px;
+   padding: 10px 20px;
+   height: 20px;
 }
 
 tr td a {
-  color: #0d6f9c;
-  text-decoration: none;
+   padding: 10px;
+   color: #bbbbbb;
+   text-decoration: none;
 }
 
 tr td a:hover {
-  color: #424242;
+   color: #e4ab32;
 }

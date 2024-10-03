@@ -139,7 +139,7 @@ main {
   grid-template-rows: repeat(5, auto);
   grid-auto-columns: auto;
   /* background-color: #ffcdcd; */
-}
+}   
 
 .outer-grid-container h2 {
   font-size: 22px;
