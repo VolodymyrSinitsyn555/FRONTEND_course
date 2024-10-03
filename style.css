@@ -1,6 +1,6 @@
 body {
    background-image: url(./img/paulina-milde-jachowska-m6OzmW0GrPk-unsplash.jpg);
-background-size: cover;
+   background-size: cover;
 }
 
 .jumping-letters {
@@ -10,26 +10,39 @@ background-size: cover;
    width: 1200px;
    height: 70px;
    margin-bottom: 70px;
-   padding-bottom: 7px;
+   padding-bottom: 4px;
    font-family: 'Rubik Mono One', monospace;
    font-size: 30px;
    color: #ffffff;
-   -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+   -webkit-box-reflect: below 0
+      linear-gradient(transparent, rgba(255, 255, 255, 0.1));
 }
 
 .jumping-letters span {
-  white-space: pre;
+   white-space: pre;
    letter-spacing: 10px;
-   animation: wave 1.6s infinite calc(.1s * var(--i));
+   animation: wave 1.6s infinite calc(0.1s * var(--i));
 }
 
-@keyframes wave{
-  0%, 40%, 100%{
-transform: translateY(0);
-  }
-  20%{
-     transform: translateY(10px);
-  }
+.jumping-letters span:first-child {
+   font-size: 25px;
+   padding-bottom: 10px;
+}
+
+.jumping-letters span:last-child {
+   font-size: 25px;
+   padding-bottom: 10px;
+}
+
+@keyframes wave {
+   0%,
+   40%,
+   100% {
+      transform: translateY(0);
+   }
+   20% {
+      transform: translateY(10px);
+   }
 }
 
 th {
@@ -47,8 +60,8 @@ h1 {
 
 table {
    border-collapse: collapse;
-   font-family: "Rubik Scribble", system-ui;
-   font-weight: 700
+   font-family: 'Rubik Scribble', system-ui;
+   font-weight: 700;
 }
 
 tr {
