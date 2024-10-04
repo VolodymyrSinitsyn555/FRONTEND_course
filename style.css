@@ -24,7 +24,7 @@ body {
    margin-bottom: 40px;
    font-family: 'Rubik Mono One', monospace;
    font-size: 30px;
-   color: #ffffff;
+   color: #c5c5c5;
    -webkit-box-reflect: below 0
       linear-gradient(transparent, rgba(255, 255, 255, 0.1));
 }
@@ -32,7 +32,7 @@ body {
 .jumping-letters span {
    white-space: pre;
    letter-spacing: 10px;
-   animation: wave 1.6s infinite calc(0.09s * var(--i));
+   animation: wave 1.6s infinite calc(2s * var(--i));
 }
 
 .jumping-letters span:first-child {
