@@ -1,4 +1,7 @@
 body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
    background-image: url(./img/paulina-milde-jachowska-m6OzmW0GrPk-unsplash.jpg);
    background-size: cover;
 }
@@ -9,7 +12,7 @@ body {
    justify-content: center;
    margin-left: 10px;
    margin-bottom: 30px;
-   width: 1250px;
+   width: auto;
 }
 
 .jumping-letters {
@@ -29,7 +32,7 @@ body {
 .jumping-letters span {
    white-space: pre;
    letter-spacing: 10px;
-   animation: wave 1.6s infinite calc(0.1s * var(--i));
+   animation: wave 1.6s infinite calc(0.09s * var(--i));
 }
 
 .jumping-letters span:first-child {
@@ -49,7 +52,7 @@ body {
       transform: translateY(0);
    }
    20% {
-      transform: translateY(10px);
+      transform: translateY(5px);
    }
 }
 
@@ -104,7 +107,7 @@ tr {
 }
 
 tr td {
-   padding: 10px 10px;
+   padding: 5px 5px;
    height: 20px;
 }
 
