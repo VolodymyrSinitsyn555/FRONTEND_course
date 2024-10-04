@@ -7,8 +7,9 @@ body {
    display: flex;
    /* flex-direction: column; */
    justify-content: center;
+   margin-left: 10px;
    margin-bottom: 30px;
-   width: 1200px;
+   width: 1250px;
 }
 
 .jumping-letters {
@@ -66,7 +67,7 @@ body {
    display: grid;
    grid-auto-flow: column;
    grid-auto-columns: 60px;
-   animation: scroll 10s linear infinite;
+   animation: scroll 12s linear infinite;
    transform: translateX(calc(-50% + 260px));
 }
 
