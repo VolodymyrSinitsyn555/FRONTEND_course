@@ -3,14 +3,21 @@ body {
    background-size: cover;
 }
 
+.wrapper {
+   display: flex;
+   /* flex-direction: column; */
+   justify-content: center;
+   margin-bottom: 30px;
+   width: 1200px;
+}
+
 .jumping-letters {
    display: flex;
    justify-content: center;
    align-items: end;
-   width: 1200px;
    height: 70px;
-   margin-bottom: 70px;
-   padding-bottom: 4px;
+   padding-bottom: 2px;
+   margin-bottom: 40px;
    font-family: 'Rubik Mono One', monospace;
    font-size: 30px;
    color: #ffffff;
@@ -45,6 +52,33 @@ body {
    }
 }
 
+.scrolling-logo {
+   width: 570px;
+   display: grid;
+   margin-left: 20px;
+   place-content: center;
+   overflow: hidden;
+   /* box-shadow: -20px 0 20px rgba(0, 0, 0, 0.3), 10px 0 20px rgba(0, 0, 0, 0.3); / */
+   /* border: 2px solid #ccc; */
+}
+
+.wrapper-scrolling-logo {
+   display: grid;
+   grid-auto-flow: column;
+   grid-auto-columns: 60px;
+   animation: scroll 10s linear infinite;
+   transform: translateX(calc(-50% + 260px));
+}
+
+
+
+@keyframes scroll {
+   to {
+      transform: translateX(calc(-50% + 860px));
+   }
+}
+
+
 th {
    color: #bbbbbb;
    font-family: 'Rubik Mono One', monospace;
@@ -69,7 +103,7 @@ tr {
 }
 
 tr td {
-   padding: 10px 20px;
+   padding: 10px 10px;
    height: 20px;
 }
 
