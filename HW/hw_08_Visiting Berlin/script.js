@@ -1,0 +1,1 @@
+const siteNames = document.getElementsByClassName('site-name');
