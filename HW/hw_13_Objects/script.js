@@ -1,3 +1,5 @@
+// ! HOMEWORK - 13
+
 // task-1
 
 const array = [`Max`, 35, `Berlin`, `dog`];
