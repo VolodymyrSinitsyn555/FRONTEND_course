@@ -76,7 +76,7 @@ nav {
 
 .episode-card {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 60px;
   border-radius: 32px;
   margin: 110px 0 135px;

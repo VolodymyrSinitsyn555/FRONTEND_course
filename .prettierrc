@@ -1,0 +1,29 @@
+{
+  "html.format.indentInnerHtml": true,
+  "prettier.singleQuote": true,
+  "html.format.wrapAttributes": "preserve",
+  "prettier.printWidth": 200,
+  "prettier.tabWidth": 3,
+  "prettier.useTabs": false,
+  "prettier.bracketSpacing": true,
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "prettier.semi": true,
+  "prettier.overrides": [
+    {
+      "files": "*.js",
+      "options": {
+        "tabWidth": 3,
+        "singleQuote": false,
+        "semi": false
+      }
+    },
+    {
+      "files": "*.css",
+      "options": {
+        "tabWidth": 3,
+        "singleQuote": true,
+        "semi": true
+      }
+    }
+  ]
+}

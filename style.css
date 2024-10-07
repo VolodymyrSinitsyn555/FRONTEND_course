@@ -1,122 +1,128 @@
 body {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   background-image: url(./img/paulina-milde-jachowska-m6OzmW0GrPk-unsplash.jpg);
-   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./img/paulina-milde-jachowska-m6OzmW0GrPk-unsplash.jpg);
+  background-size: cover;
 }
 
 .wrapper {
-   display: flex;
-   /* flex-direction: column; */
-   justify-content: center;
-   margin-left: 10px;
-   margin-bottom: 30px;
-   width: auto;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  width: auto;
 }
 
 .jumping-letters {
-   display: flex;
-   justify-content: center;
-   align-items: end;
-   height: 70px;
-   padding-bottom: 2px;
-   margin-bottom: 40px;
-   font-family: 'Rubik Mono One', monospace;
-   font-size: 30px;
-   color: #c5c5c5;
-   -webkit-box-reflect: below 0
-      linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 70px;
+  padding-bottom: 2px;
+  margin-bottom: 40px;
+  font-family: "Rubik Mono One", monospace;
+  font-size: 30px;
+  color: #c5c5c5;
+  -webkit-box-reflect: below 0
+    linear-gradient(transparent, rgba(255, 255, 255, 0.1));
 }
 
 .jumping-letters span {
-   white-space: pre;
-   letter-spacing: 10px;
-   animation: wave 1.6s infinite calc(2s * var(--i));
+  font-size: 30px;
+  white-space: pre;
+  letter-spacing: 10px;
+  animation: wave 1.6s infinite calc(2s * var(--i));
+
+  /* background */
+
+  /* background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGI1Y3ZxYnF0Znlsd251YnZ6YXNieTU4YTk5Y2wwZWl3ZHplbTY1OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dwaeIbBnF6HBu/200w.webp);
+  background-size: 100px;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text; */
 }
 
 .jumping-letters span:first-child {
-   font-size: 25px;
-   padding-bottom: 10px;
+  font-size: 25px;
+  padding-bottom: 10px;
 }
 
 .jumping-letters span:last-child {
-   font-size: 25px;
-   padding-bottom: 10px;
+  font-size: 25px;
+  padding-bottom: 10px;
 }
 
 @keyframes wave {
-   0%,
-   40%,
-   100% {
-      transform: translateY(0);
-   }
-   20% {
-      transform: translateY(5px);
-   }
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(5px);
+  }
 }
 
 .scrolling-logo {
-   width: 570px;
-   display: grid;
-   margin-left: 20px;
-   place-content: center;
-   overflow: hidden;
-   /* box-shadow: -20px 0 20px rgba(0, 0, 0, 0.3), 10px 0 20px rgba(0, 0, 0, 0.3); / */
-   /* border: 2px solid #ccc; */
+  width: 570px;
+  display: grid;
+  margin-left: 20px;
+  place-content: center;
+  overflow: hidden;
+  /* box-shadow: -20px 0 20px rgba(0, 0, 0, 0.3), 10px 0 20px rgba(0, 0, 0, 0.3); / */
+  /* border: 2px solid #ccc; */
 }
 
 .wrapper-scrolling-logo {
-   display: grid;
-   grid-auto-flow: column;
-   grid-auto-columns: 60px;
-   animation: scroll 12s linear infinite;
-   transform: translateX(calc(-50% + 260px));
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 60px;
+  animation: scroll 12s linear infinite;
+  transform: translateX(calc(-50% + 260px));
 }
-
-
 
 @keyframes scroll {
-   to {
-      transform: translateX(calc(-50% + 860px));
-   }
+  to {
+    transform: translateX(calc(-50% + 860px));
+  }
 }
 
-
 th {
-   color: #bbbbbb;
-   font-family: 'Rubik Mono One', monospace;
-   font-size: 13px;
-   letter-spacing: 4px;
-   padding-bottom: 10px;
+  color: #bbbbbb;
+  font-family: "Rubik Mono One", monospace;
+  font-size: 13px;
+  letter-spacing: 4px;
+  padding-bottom: 10px;
 }
 
 h1 {
-   background-color: #ffffff;
-   width: 80%;
+  background-color: #ffffff;
+  width: 80%;
 }
 
 table {
-   border-collapse: collapse;
-   font-family: 'Rubik Scribble', system-ui;
-   font-weight: 700;
+  border-collapse: collapse;
+  font-family: "Rubik Scribble", system-ui;
+  font-weight: 700;
 }
 
 tr {
-   border-bottom: 1px solid rgb(61, 61, 61);
+  border-bottom: 1px solid rgb(61, 61, 61);
 }
 
 tr td {
-   padding: 5px 5px;
-   height: 20px;
+  padding: 5px 5px;
+  height: 20px;
 }
 
 tr td a {
-   padding: 10px;
-   color: #bbbbbb;
-   text-decoration: none;
+  padding: 10px;
+  color: #bbbbbb;
+  text-decoration: none;
 }
 
 tr td a:hover {
-   color: #e09900;
+  color: #e09900;
 }
