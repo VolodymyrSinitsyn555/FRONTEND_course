@@ -42,7 +42,7 @@ const renderTasks = (filter = "all") => {
       task.completed = !task.completed;
       renderTasks(filter);
     });
-
+    
     taskList.appendChild(listItem);
   });
 };
