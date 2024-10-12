@@ -13,6 +13,9 @@ button.addEventListener("click", () => {
     alert(`Time cannot be negative`);
     return;
   }
+
+  button.disabled = true;
+
   timer.textContent = time;
 
   const interval = setInterval(() => {
@@ -23,6 +26,7 @@ button.addEventListener("click", () => {
         timer.textContent = `00:00`;
         message.textContent = ``;
         inputField.value = ``;
+        button.disabled = false;
       }, 2000);
     } else {
       time--;
