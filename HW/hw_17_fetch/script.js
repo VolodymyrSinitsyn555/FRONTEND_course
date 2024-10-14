@@ -2,7 +2,6 @@ let allTasks = [];
 
 const arrayDataTasks = fetch(`https://jsonplaceholder.typicode.com/todos`)
   .then((response) => {
-    console.log(response);
     return response.json();
   })
   .then((data) => {
