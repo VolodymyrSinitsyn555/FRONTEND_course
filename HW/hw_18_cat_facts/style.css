@@ -12,22 +12,18 @@ body{
   background-color: rgb(0, 0, 0);
 }
 
-/* .wrapper{
-  background-color: #1d1d1d;
-  padding: 15px;
-  border-radius: 5px;
-  text-align: center;
-  width: 30%;
-  border: 0.1px solid #4b0077;
+/* h1{
+  text-shadow: 0 0 60px #66008f, 0 0 30px #9800d4c7, 0 0 20px #8700bd;
 } */
 
 .wrapper{
   background-color: #161616;
   padding: 15px;
   padding-bottom: 35px;
-  border-radius: 30px;
+  border-radius: 20px;
   text-align: center;
-  width: 30%;
+  min-width: 100px;
+  max-width: 380px;
   box-shadow:0 0 250px  #4b0077, 0 0 50px  #4b0077,  0 0 100px  #4b0077, 0 0 50px  #7a00c0, inset 0 0 30px #4b0077, inset 0 0 15px #7a00c0, inset 0 0 10px #4b0077;
 
 }
@@ -37,7 +33,7 @@ body{
   max-width: 300px;  
   height: auto;     
   object-fit: cover; 
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .text-cat-fact{
