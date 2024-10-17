@@ -6,17 +6,21 @@ const temperatureMaxText = document.getElementById(`temperature-max-text`);
 const temperatureMinText = document.getElementById(`temperature-min-text`);
 const today = document.getElementById(`today`);
 
+const weekDay = document.querySelectorAll(".text-weekDay");
+const temperatureMax = document.querySelectorAll(".temperature-max-text");
+const temperatureMin = document.querySelectorAll("#temperature-min-text");
+
+// --------- Текущий прогноз погоды
+
 async function getWeather() {
   const result1 = await fetch("https://get.geojs.io/v1/ip/geo.json");
 
   const dataOfLocation = await result1.json();
 
-  console.log("Данные места:", dataOfLocation);
-
   const cor1 = dataOfLocation.latitude;
   const cor2 = dataOfLocation.longitude;
 
-  const apiKey = "75019c2ac08b4ab09de82230241610";
+  const apiKey = "78d3eafcf12b461a868142819241610";
   const result2 = await fetch(
     `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${
       cor1 + "," + cor2
@@ -32,8 +36,37 @@ async function getWeather() {
     date,
     `en`
   )}, ${getLocalizedMonthName(date, `en`)} ${date.getDate()}`;
+
+  // ----------- Прогноз погоды на неделю
+
+  const result3 = await fetch(
+    `https://api.weatherapi.com/v1/forecast.json?key=78d3eafcf12b461a868142819241610&q=${
+      cor1 + "," + cor2
+    }&days=7&aqi=no&alerts=no`
+  );
+
+  const data = await result3.json();
+  const forecastDays = data.forecast.forecastday;
+
+  forecastDays.forEach((currentDay, index) => {
+    if (weekDay[index]) {
+      let forecastDate = new Date(currentDay.date);
+      let dayOfWeek = getLocalizedWeekDayName(forecastDate, "en").slice(0, 3);
+      weekDay[index].innerText = dayOfWeek;
+    }
+
+    if (temperatureMax[index]) {
+      temperatureMax[index].innerText = `${Math.round(
+        currentDay.day.maxtemp_c
+      )}°`;
+    }
+    if (temperatureMin[index]) {
+      temperatureMin[index].innerText = `${Math.round(
+        currentDay.day.mintemp_c
+      )}°`;
+    }
+  });
 }
-console.log(today);
 
 getWeather();
 
@@ -48,4 +81,3 @@ function getLocalizedWeekDayName(date, locale) {
   }).format(date);
 }
 const date = new Date();
-// console.log(getLocalizedWeekDayName(date, `en`));
