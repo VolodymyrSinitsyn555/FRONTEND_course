@@ -90,7 +90,7 @@ word-wrap: break-word;
   font-size: 30px;
   white-space: pre;
   letter-spacing: 10px;
-  animation: wave 1.6s infinite calc(2s * var(--i));
+  animation: wave 1.6s infinite calc(0.08s * var(--i));
 
 
   /* background */
