@@ -20,11 +20,11 @@ async function getWeather() {
   const cor1 = dataOfLocation.latitude;
   const cor2 = dataOfLocation.longitude;
 
-  const apiKey = "78d3eafcf12b461a868142819241610";
-  const result2 = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${
-      cor1 + "," + cor2
-    }&aqi=no`
+  const result2 = await fetch(`https://api.weatherapi.com/v1/current.json?key=78d3eafcf12b461a868142819241610&q=${
+    cor1 + "," + cor2
+  }&aqi=no
+`
+
   );
   const weatherData = await result2.json();
 
